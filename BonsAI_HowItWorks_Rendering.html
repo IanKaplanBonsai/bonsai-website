@@ -283,20 +283,20 @@ footer{background:var(--navy2);border-top:1px solid var(--border);padding:40px 0
     <span class="nav-wordmark">BonsAI</span>
   </a>
   <div class="nav-links">
-    <a href="#" class="nav-link">Home</a>
-    <a href="#" class="nav-link active">How It Works</a>
-    <a href="#" class="nav-link">Governance Domains</a>
-    <a href="#" class="nav-link">Pricing</a>
-    <a href="#" class="nav-link">About Us</a>
+    <a href="https://iankaplanbonsai.github.io/bonsai-website/BonsAI_Home_v2_Rendering.html" class="nav-link">Home</a>
+    <a href="https://iankaplanbonsai.github.io/bonsai-website/BonsAI_HowItWorks_Rendering.html" class="nav-link active">How It Works</a>
+    <a href="https://iankaplanbonsai.github.io/bonsai-website/BonsAI_Domains_Rendering.html" class="nav-link">Governance Domains</a>
+    <a href="https://iankaplanbonsai.github.io/bonsai-website/BonsAI_Pricing_Rendering.html" class="nav-link">Pricing</a>
+    <a href="https://iankaplanbonsai.github.io/bonsai-website/BonsAI_About_Rendering.html" class="nav-link">About Us</a>
   </div>
-  <a href="#" class="nav-cta">Schedule a Demo</a>
+  <a href="https://calendar.app.google/4kRZLqHUXp9te7cy9" target="_blank" class="nav-cta">Schedule a Demo</a>
 </nav>
 
 <!-- PAGE HERO -->
 <div class="page-hero">
   <div class="container">
     <div class="breadcrumb">
-      <a href="#">Home</a><span>›</span><span>How It Works</span>
+      <a href="https://iankaplanbonsai.github.io/bonsai-website/BonsAI_Home_v2_Rendering.html">Home</a><span>›</span><span>How It Works</span>
     </div>
     <div class="page-hero-inner">
       <h1 class="page-title">How BonsAI Works</h1>
@@ -416,7 +416,7 @@ footer{background:var(--navy2);border-top:1px solid var(--border);padding:40px 0
               <span class="diag-tag green">Capital</span>
               <span class="diag-tag green">Data &amp; AI</span>
               <span class="diag-tag green">+ 6 more</span>
-              <div style="width:100%;margin-top:8px;"><a href="#" style="font-size:11px;color:var(--green);text-decoration:none;opacity:0.85;">See all domains and sub-domains →</a></div>
+              <div style="width:100%;margin-top:8px;"><a href="https://iankaplanbonsai.github.io/bonsai-website/BonsAI_Domains_Rendering.html" style="font-size:11px;color:var(--green);text-decoration:none;opacity:0.85;">See all domains and sub-domains →</a></div>
             </div>
           </div>
           <div class="diag-arrow">↓ active for ↓</div>
@@ -459,13 +459,12 @@ footer{background:var(--navy2);border-top:1px solid var(--border);padding:40px 0
           <div class="ds-feature-body">Enterprise-level admins can search across their entire enterprise, domain-level admins can search within their domains. You decide who can search for what.</div>
         </div>
       </div>
-      <a href="#" class="link-arrow" style="margin-top:20px;display:inline-flex;">Learn more about Deep Search →</a>
-    </div>
+      </div>
   </div>
 </section>
 
 <!-- 3 — THE THINKING LOOP -->
-<section class="loop-section" id="loop">
+<section class="loop-section" id="loop"><a id="thinking-loop"></a>
   <div class="container">
     <div class="section-label">Section 3</div>
     <div class="section-rule"></div>
@@ -479,13 +478,13 @@ footer{background:var(--navy2);border-top:1px solid var(--border);padding:40px 0
     <div class="intelligence-embed">
       <div class="intel-header">
         <div style="display:flex;gap:4px;">
-          <div class="intel-tab active">🧠 Agent Thoughts</div>
-          <div class="intel-tab">💬 Inter-Agent Dialogue</div>
-          <div class="intel-tab">📡 Sector Intelligence</div>
+          <div class="intel-tab active" onclick="switchHIWTab(this,'thoughts')">🧠 Agent Thoughts</div>
+          <div class="intel-tab" onclick="switchHIWTab(this,'dialogue')">💬 Inter-Agent Dialogue</div>
+          <div class="intel-tab" onclick="switchHIWTab(this,'sector')">📡 Sector Intelligence</div>
         </div>
         <span style="margin-left:auto;font-size:10px;color:var(--t3);font-family:monospace;">Last updated 6 min ago · 3 agents active</span>
       </div>
-      <div class="intel-body">
+      <div class="intel-body" id="hiw-tab-thoughts">
         <div class="thought-card">
           <div class="thought-domain">
             <span><span class="live-dot" style="width:5px;height:5px;"></span>Risk &amp; Compliance</span>
@@ -509,6 +508,57 @@ footer{background:var(--navy2);border-top:1px solid var(--border);padding:40px 0
           </div>
           <div class="thought-text">Reviewed R&amp;C and Legal EU AI Act analysis. <strong>Our website currently describes our credit decisions as 'AI-powered' without any disclosure of human oversight.</strong> This language will not meet the EU AI Act transparency requirements. Website copy must be updated before enforcement date.</div>
           <div class="thought-signal">Cross-reference: <span>R&amp;C + Legal thoughts — EU AI Act thread</span></div>
+        </div>
+      </div>
+      <div class="intel-body" id="hiw-tab-dialogue" style="display:none;grid-template-columns:1fr;">
+        <div class="thought-card">
+          <div class="thought-domain" style="color:var(--green);">
+            <span><span class="live-dot" style="width:5px;height:5px;"></span>Risk &amp; Compliance → Legal</span>
+            <span class="thought-time">17 min ago</span>
+          </div>
+          <div class="thought-text"><strong>Flagging EU AI Act vendor contract gap to Legal.</strong> If the credit scoring tool vendor does not take on compliance obligations contractually, liability falls entirely on us as deployer. Urgent review required before conformity assessment timeline.</div>
+          <div class="thought-signal">→ Legal responded</div>
+        </div>
+        <div class="thought-card">
+          <div class="thought-domain" style="color:var(--blue);">
+            <span><span class="live-dot" style="width:5px;height:5px;background:var(--blue);animation:none;"></span>Legal → Risk &amp; Compliance</span>
+            <span class="thought-time">12 min ago</span>
+          </div>
+          <div class="thought-text">Confirmed: vendor contract silent on AI Act obligations. <strong>Recommend contract amendment with explicit compliance clause and liability allocation before assessment begins.</strong> Can draft clause language — escalating to procurement now.</div>
+          <div class="thought-signal">→ Brand responded</div>
+        </div>
+        <div class="thought-card">
+          <div class="thought-domain" style="color:var(--amber);">
+            <span><span class="live-dot" style="width:5px;height:5px;background:var(--amber);animation:none;"></span>Brand &amp; Comms → All</span>
+            <span class="thought-time">9 min ago</span>
+          </div>
+          <div class="thought-text">Adding to thread: our public-facing copy calls these 'AI-powered decisions' with no human oversight disclosure. <strong>This is a transparency exposure independent of the vendor contract issue.</strong> Copy update needed regardless of how legal resolves the contract gap.</div>
+        </div>
+      </div>
+      <div class="intel-body" id="hiw-tab-sector" style="display:none;grid-template-columns:1fr;">
+        <div class="thought-card">
+          <div class="thought-domain" style="color:var(--green);">
+            <span>Regulatory</span>
+            <span class="thought-time" style="background:rgba(229,57,53,0.1);color:#E53935;border-color:rgba(229,57,53,0.2);">High severity</span>
+          </div>
+          <div class="thought-text"><strong>EU AI Act — enforcement deadline August 2026:</strong> High-risk AI system operators must complete conformity assessments. Financial services AI tools including credit scoring, insurance underwriting, and fraud detection are explicitly listed under Annex III.</div>
+          <div class="thought-signal">EUR-Lex · flagged by 8 of 12 enterprises</div>
+        </div>
+        <div class="thought-card">
+          <div class="thought-domain" style="color:var(--blue);">
+            <span>Market</span>
+            <span class="thought-time" style="background:rgba(245,166,35,0.1);color:var(--amber);border-color:rgba(245,166,35,0.2);">Medium severity</span>
+          </div>
+          <div class="thought-text"><strong>ESG disclosure requirements tightening in Q3 2026:</strong> CSRD second wave brings mid-size enterprises into scope. Sustainability governance frameworks not yet aligned with double materiality reporting requirements face significant remediation effort.</div>
+          <div class="thought-signal">EFRAG · flagged by 6 of 12 enterprises</div>
+        </div>
+        <div class="thought-card">
+          <div class="thought-domain" style="color:var(--amber);">
+            <span>Regulatory</span>
+            <span class="thought-time" style="background:rgba(245,166,35,0.1);color:var(--amber);border-color:rgba(245,166,35,0.2);">Medium severity</span>
+          </div>
+          <div class="thought-text"><strong>AI vendor dependency governance:</strong> Regulators in three jurisdictions have issued guidance requiring enterprises to document and audit AI vendor relationships. Vendor AI &amp; Technology governance frameworks need to reflect this explicitly.</div>
+          <div class="thought-signal">FCA / MAS / BaFin · flagged by 5 of 12 enterprises</div>
         </div>
       </div>
     </div>
@@ -551,7 +601,7 @@ footer{background:var(--navy2);border-top:1px solid var(--border);padding:40px 0
 </section>
 
 <!-- 4 — EMPLOYEE GUIDANCE -->
-<section class="emp-section" id="guidance">
+<section class="emp-section" id="guidance"><a id="how-employees-work"></a>
   <div class="container">
     <div class="section-label">Section 4</div>
     <div class="section-rule"></div>
@@ -678,7 +728,6 @@ footer{background:var(--navy2);border-top:1px solid var(--border);padding:40px 0
     <div class="security-grid">
       <div class="security-copy">
         <p>Your governance data belongs to you. It is not shared with other organisations, not used to train models, and not accessible to BonsAI staff in the normal course of operations.</p>
-        <a href="#" class="link-arrow">Read the full security overview →</a>
       </div>
       <div class="sec-cards">
         <div class="sec-card">
@@ -817,8 +866,8 @@ footer{background:var(--navy2);border-top:1px solid var(--border);padding:40px 0
     <h2 class="cta-heading">Ready to see it working?</h2>
     <p class="cta-body">The best way to understand BonsAI is to see it running on a real governance domain. We can use a pre-configured test environment, or — if you give us 30 minutes with a compliance lead before the session — we will configure one of your own governance domains and show you your own policies in action.</p>
     <div class="cta-buttons">
-      <a href="#" class="btn-primary">Schedule a Demo →</a>
-      <a href="#" class="btn-secondary">Explore governance domains →</a>
+      <a href="https://calendar.app.google/4kRZLqHUXp9te7cy9" target="_blank" class="btn-primary">Schedule a Demo →</a>
+      <a href="https://iankaplanbonsai.github.io/bonsai-website/BonsAI_Domains_Rendering.html" class="btn-secondary">Explore governance domains →</a>
     </div>
   </div>
 </section>
@@ -835,11 +884,11 @@ footer{background:var(--navy2);border-top:1px solid var(--border);padding:40px 0
         </div>
       </div>
       <div class="footer-links">
-        <a href="#">Home</a>
-        <a href="#">How It Works</a>
-        <a href="#">Governance Domains</a>
-        <a href="#">Pricing</a>
-        <a href="#">About Us</a>
+        <a href="https://iankaplanbonsai.github.io/bonsai-website/BonsAI_Home_v2_Rendering.html">Home</a>
+        <a href="https://iankaplanbonsai.github.io/bonsai-website/BonsAI_HowItWorks_Rendering.html">How It Works</a>
+        <a href="https://iankaplanbonsai.github.io/bonsai-website/BonsAI_Domains_Rendering.html">Governance Domains</a>
+        <a href="https://iankaplanbonsai.github.io/bonsai-website/BonsAI_Pricing_Rendering.html">Pricing</a>
+        <a href="https://iankaplanbonsai.github.io/bonsai-website/BonsAI_About_Rendering.html">About Us</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Use</a>
       </div>
@@ -862,6 +911,17 @@ window.addEventListener('scroll', function(){
     }
   });
 });
+
+// Intelligence panel tab switching
+function switchHIWTab(el, tab) {
+  document.querySelectorAll('.intelligence-embed .intel-tab').forEach(function(t){ t.classList.remove('active'); });
+  el.classList.add('active');
+  document.getElementById('hiw-tab-thoughts').style.display = 'none';
+  document.getElementById('hiw-tab-dialogue').style.display = 'none';
+  document.getElementById('hiw-tab-sector').style.display = 'none';
+  var panel = document.getElementById('hiw-tab-' + tab);
+  panel.style.display = 'grid';
+}
 </script>
 </body>
 </html>
