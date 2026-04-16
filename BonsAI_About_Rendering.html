@@ -442,7 +442,7 @@ async function submitForm() {
   try {
     await fetch(MAKE_WEBHOOK, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'X-BonsAI-Secret': 'bonsai-whsec-7499bd5491decddb496a7359e4e5a456' },
       body: JSON.stringify({
         first_name: firstName.value,
         last_name: lastName.value,
