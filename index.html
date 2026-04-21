@@ -37,6 +37,7 @@ nav{
 .nav-links{display:flex;align-items:center;gap:2px;flex:1;}
 .nav-link{padding:6px 12px;border-radius:7px;font-size:12px;font-weight:500;color:var(--t3);text-decoration:none;border:1px solid transparent;transition:all .2s;white-space:nowrap;}
 .nav-link:hover{background:var(--navy3);color:var(--t2);border-color:var(--border);}
+.nav-link.active{background:rgba(245,166,35,0.1);border:1px solid rgba(245,166,35,0.2);color:var(--amber);}
 .nav-cta{margin-left:auto;background:var(--green);color:var(--navy);font-size:11px;font-weight:700;padding:8px 20px;border-radius:7px;text-decoration:none;transition:all .2s;white-space:nowrap;flex-shrink:0;}
 .nav-cta:hover{background:#34D690;transform:translateY(-1px);}
 
@@ -388,7 +389,7 @@ footer{background:var(--navy2);border-top:1px solid var(--border);padding:40px 0
     <span class="nav-wordmark">BonsAI</span>
   </a>
   <div class="nav-links">
-    <a href="/" class="nav-link" style="color:var(--t2)">Home</a>
+    <a href="/" class="nav-link active">Home</a>
     <a href="/how-it-works" class="nav-link">How It Works</a>
     <a href="/domains" class="nav-link">Governance Domains</a>
     <a href="/pricing" class="nav-link">Pricing</a>
